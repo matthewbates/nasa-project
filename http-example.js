@@ -1,4 +1,9 @@
-// http and https modules include a convienence function called get that does the same thing that request does when we are only getting data from the server
+// WHY WE WANT TO USE MODULES
+// 1.) reuse existing code
+// 2.) helps organize our code
+// 3.) expose only the functionality that will be used by other modules
+
+// http & https modules include a function called get that does the same thing that request does when we are only getting data from the server
 const { get } = require("https");
 
 get("https://www.google.com", (res) => {
