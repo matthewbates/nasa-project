@@ -1,5 +1,4 @@
 const { parse } = require("csv-parse");
-// const fs = require("fs");
 const fs = require("node:fs");
 
 const habitablePlanets = [];
@@ -28,7 +27,6 @@ fs.createReadStream("kepler_data.csv")
   })
   .on("error", (err) => {
     console.log(new Error(err));
-    // console.log("error");
   })
   .on("end", () => {
     console.log(habitablePlanets.map((planet) => planet["kepler_name"]));
@@ -38,3 +36,4 @@ fs.createReadStream("kepler_data.csv")
 
 // parse() returns an EventEmitter that deals with streams of data coming in from that file. Doesn't deal with files directly
 // parse();
+
