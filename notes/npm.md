@@ -15,3 +15,7 @@ npm i PACKAGE_NAME_HERE
 # INSTALLING NODEMON
 
 Nodemon is a tool that helps develop Node.js based applications by automatically restarting the Node.js application when file changes in the directory are detected
+
+# --SAVE-DEV
+
+Used for npm package installation for the development of the project. Not needed to run our project in production
