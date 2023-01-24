@@ -35,7 +35,6 @@ export default function useLaunches(
         target,
       });
 
-      // TODO: Set success based on response.
       const success = response.ok;
       if (success) {
         getLaunches();
@@ -54,8 +53,7 @@ export default function useLaunches(
     async (id) => {
       const response = await httpAbortLaunch(id);
 
-      // TODO: Set success based on response.
-      const success = false;
+      const success = response.ok;
       if (success) {
         getLaunches();
         onAbortSound();
