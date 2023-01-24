@@ -20,7 +20,7 @@ function postFriend(req, res) {
 
 function getFriends(req, res) {
   // to be more explicit that we're sending JSON, use res.json(). Works just like res.send()
-  res.json(model);
+  return res.status(200).json(model);
   // res.send(model);
 }
 
