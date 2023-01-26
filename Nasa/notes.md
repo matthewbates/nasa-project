@@ -1,1 +1,0 @@
-Creating a package.json file at the root of the project which wraps the two packages for server/client so we can run npm commands from our project folder that perform actions like starting the server on each of the inner packages

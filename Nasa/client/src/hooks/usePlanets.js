@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 
 import { httpGetPlanets } from "./requests";
 
-export default function usePlanets() {
+function usePlanets() {
   const [planets, savePlanets] = useState([]);
 
   const getPlanets = useCallback(async () => {
@@ -16,3 +16,5 @@ export default function usePlanets() {
 
   return planets;
 }
+
+export default usePlanets;

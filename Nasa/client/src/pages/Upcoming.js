@@ -6,7 +6,6 @@ import Clickable from "../components/Clickable";
 const styles = () => ({
   link: {
     color: "red",
-    textDecoration: "none",
   },
 });
 
@@ -18,7 +17,7 @@ const Upcoming = ({ entered, launches, classes, abortLaunch }) => {
         return (
           <tr key={String(launch.flightNumber)}>
             <td>
-              <Clickable style={{ color: "red" }}>
+              <Clickable>
                 <Link
                   className={classes.link}
                   onClick={() => abortLaunch(launch.flightNumber)}

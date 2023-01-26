@@ -12,6 +12,9 @@ get("https://www.google.com", (res) => {
     // a chunk is a piece of data that's not necessarily the whole of the response
     console.log(`Data chunk: ${chunk}`);
   });
+  res.on("error", (err) => {
+    console.log(new Error(err));
+  });
   // use end when there's no more data coming in from the request. Doesn't have any parameters
   res.on("end", () => {
     console.log("No more data");

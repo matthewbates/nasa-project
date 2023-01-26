@@ -1,9 +1,13 @@
-# BASICS
+# WHAT IS MIDDLEWARE?
 
-Looks like route handlers, but uses a third parameter called next. this callback function has the opportunity to work with the req and use the data from it, then take some action before it reaches the route handlers
+A routing and Middleware framework for handling the different routing of the webpage and it works between the request and response cycle
 
-The next function is responsible for the order of execution of the middleware
+Gets executed after the server receives the request and before the controller actions send the response
 
-app.use(function(req, res, next) {
+Can be used to add logging and authentication functionality
 
-})
+Middleware can be chained from one to another, Hence creating a chain of functions that are executed in order
+
+The next() function in the express is responsible for calling the next middleware function, if there is one
+
+app.get(PATH, (req, res, next) => {}, (req, res) => {})

@@ -36,7 +36,6 @@ movePlayer(330, "Left", function() {
             });
         });
     });
-
 });
 
 # WITH PROMISES

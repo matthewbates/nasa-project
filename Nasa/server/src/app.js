@@ -6,7 +6,7 @@ const morgan = require("morgan");
 const planetsRouter = require("./routes/planets/planets.router");
 const launchesRouter = require("./routes/launches/launches.router");
 
-// express is basically a fancy listener function for built-in http server
+// app is the variable that holds the express application
 const app = express();
 
 // function that returns the cors middleware

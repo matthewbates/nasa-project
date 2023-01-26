@@ -19,7 +19,7 @@ const friends = [
   },
 ];
 
-// both req is a READABLE stream and res is a WRITABLE stream
+// req is a READABLE stream and res is a WRITABLE stream
 server.on("request", (req, res) => {
   // /friends/2 => ["", "friends", "2"]
   const items = req.url.split("/");

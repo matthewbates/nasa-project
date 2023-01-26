@@ -1,3 +1,5 @@
+// const launches = require("./launches.mongo");
+
 // works like an object where you map string keys to values
 // allow us to map any value to any other value
 const launches = new Map();

@@ -38,11 +38,8 @@ function getFriend(req, res) {
   }
 }
 
-function removeFriend(req, res) {}
-
 module.exports = {
   postFriend,
   getFriends,
   getFriend,
-  removeFriend,
 };

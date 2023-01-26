@@ -27,7 +27,9 @@ const styles = () => ({
   },
 });
 
-const AppLayout = ({ sounds, classes }) => {
+const AppLayout = (props) => {
+  const { sounds, classes } = props;
+
   const [frameVisible, setFrameVisible] = useState(true);
   const animateFrame = () => {
     setFrameVisible(false);
