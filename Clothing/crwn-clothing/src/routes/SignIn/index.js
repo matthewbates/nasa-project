@@ -23,8 +23,10 @@ export default function SignIn() {
           <label>Password</label>
           <input type="text" />
           <div className="btn-wrapper">
-            <button>Sign in</button>
-            <button onClick={logGoogleUser}>Google sign in</button>
+            <button className="btn">Sign in</button>
+            <button className="btn" onClick={logGoogleUser}>
+              Google sign in
+            </button>
           </div>
         </div>
       </div>
@@ -40,7 +42,9 @@ export default function SignIn() {
           <input type="text" />
           <label>Confirm Password</label>
           <input type="text" />
-          <button>Sign up</button>
+          <div className="btn-wrapper">
+            <button className="btn">Sign up</button>
+          </div>
         </div>
       </div>
     </div>
